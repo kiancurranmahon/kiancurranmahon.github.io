@@ -1,0 +1,4 @@
+{
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.quoteProps": "preserve"
+}

@@ -37,6 +37,7 @@ To run this project locally, follow these steps:
 4. Starting the server
 Once you have installed the dependencies, you can start the development server:
 `npm start `
+
 This will start the development server and open the portfolio website in your default web browser.
 
 ## Contributing

@@ -5,8 +5,7 @@ This is my current portfolio website built using HTML, CSS, JavaScript and React
 
 - [Demo](#demo)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Installation and Usage](#installation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -27,19 +26,17 @@ You can view a live demo of the portfolio website [here](https://kiancurranmahon
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-''' git clone https://github.com/your-username/portfolio-website.git '''
+ `git clone https://github.com/your-username/portfolio-website.git` 
 
-2.Navigate to the project directory:
-''' cd portfolio-website '''
+2. Navigate to the project directory:
+ `cd portfolio-website `
 
-3.Install dependencies:
-''' npm install '''
+3. Install dependencies:
+ `npm install `
 
-4.Starting the server
+4. Starting the server
 Once you have installed the dependencies, you can start the development server:
-
-''' npm start '''
-
+`npm start `
 This will start the development server and open the portfolio website in your default web browser.
 
 ## Contributing

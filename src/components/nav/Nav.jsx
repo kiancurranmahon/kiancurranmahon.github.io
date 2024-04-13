@@ -14,6 +14,7 @@ const Nav = () => {
     <nav>
       < a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
         <TiHomeOutline /></a>
+      {activeNav === "home" && <p>Home</p>}
       < a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
         <MdInfoOutline /></a>
       < a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}>

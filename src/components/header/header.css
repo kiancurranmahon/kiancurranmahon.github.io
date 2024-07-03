@@ -6,6 +6,9 @@ header {
 h1, h5, h3 {
     color: var(--color-black);
 }
+h4 {
+    size: 5rem;
+}
 .header__container {
     text-align: center;
     height: 100%;
@@ -17,6 +20,10 @@ h1, h5, h3 {
     grid-template-columns: 40px 1fr 40px;
 }
 
+.me, .widgets {
+    display: absolute;
+
+}
 
 /*======================= Header Socials ===========================*/
 .header__socials {
@@ -29,39 +36,72 @@ h1, h5, h3 {
     font-size: 1.2rem;
 }
 
-
-/* .header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-} */
-
-
 /*======================= CTA ===========================*/
 .cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-    
 }
-
 /*======================= ME ===========================*/
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    position: grid;
     left: calc(50% - 11rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 50%;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.widgets {
+    background-color: var(--color-bg-variant);
+    position: absolute;
+    right: calc(30% - 25rem);
+    margin-top: 4rem;
+    border: 1px solid ;
+    text-align: left;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    width: 43rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
 
+.widgets > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.widgets > div:hover {
+    background: transparent;
+    border-color: var(--color-bg-variant);
+    cursor:default
+}
 
+.widgets > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.widget_content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.widget_icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+.inline_Horizontal {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    gap: 1rem;
+}
 /*================================== MEDIA QUERIES (medium devices )====================================*/
 @media screen and (max-width:1024px) {
     header {

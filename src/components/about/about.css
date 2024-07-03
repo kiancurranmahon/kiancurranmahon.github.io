@@ -30,8 +30,8 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
+    background: var(--color-bg-dark);
+    border: 1px solid ;
     border-radius: 1rem;
     padding:2rem;
     text-align: center;
@@ -45,22 +45,32 @@
 }
 .about__icon {
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
+    color: var(--color-white);
+    font-size: 0.95rem;
+}
+.about__card:hover h5 {
+    color: var(--color-black);
     font-size: 0.95rem;
 }
 
 .about__card small {
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--color-white);
+}
+.about__card:hover small {
+    font-size: 0.7rem;
+    color: var(--color-black);
 }
 .about__content p {
     margin: 2rem 0 3.6rem;
-    color: var(--color-light);
+    color: var(--color-black);
 }
+
 
 /*================================== MEDIA QUERIES (medium devices )====================================*/
 @media screen and (max-width:1024px) {

@@ -1,7 +1,28 @@
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem; 
+    background: none; 
+    color: var(--color-primary); 
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--color-primary); /* Primary button color */
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    
 }
 
 .portfolio__item {
@@ -18,19 +39,116 @@
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     overflow: hidden;
+
+}
+.portfolio__item h1 {
+    display: flex;                  
+    justify-content: center;           
+    align-items: center;               
+    text-align: center;    
+
 }
 
-.portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+ .portfolio__item p  {
+    margin: 1rem 0.2rem;
 }
-
+.portfolio__item button {
+    padding: 1rem;
+}
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
+/* For the popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+}
+
+/* For the popup content */
+.popup-content {
+  background: var(--color-bg-variant);
+  padding: 1rem;
+  width:80%;
+  max-width: 550px;
+  border-radius: 2rem;
+  outline: 0.5px;
+  outline-color: var(--color-white);
+  outline-style: solid;
+  text-align: center;
+  position: relative;
+  z-index: 1001; 
+  
+}
+.popup-content img {
+    gap: 1rem  0.2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    outline: 0.5px;
+  outline-color: var(--color-white);
+  outline-style: solid;
+  margin-bottom: 1rem;
+}
+
+.popup-content h3 {
+  margin-bottom: 1rem;
+}
+
+.popup-content .btn {
+  border-color: white;
+  background-color: var(--color-priamry-variant);
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center; /* Center-aligns content vertically */
+    justify-content: space-between; /* Buttons align to the sides of the image */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    border-style: solid;
+    border-color: var(--color-white);
+    border: 10rem;
+}
+
+.carousel-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; /* Ensures button size is consistent */
+    height: 2rem; /* Ensures button size is consistent */
+}
+
+
 
 /*================================== MEDIA QUERIES (medium devices )====================================*/
 @media screen and (max-width:1024px) {

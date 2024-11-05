@@ -10,7 +10,10 @@ import Portfolio from "./components/portfolio/Portfolio";
 
 const App = () => {
   return (
-   <>
+    <>
+      <div className="under-construction-banner">
+        🚧 This site is under construction 🚧
+      </div>
       <Header />
         <Nav />
         <About />

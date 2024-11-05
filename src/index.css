@@ -8,6 +8,20 @@
     list-style: none;
     text-decoration: none;
 }
+.under-construction-banner { /*Temporay underconstruction signs*/
+  background-color: #FFD700;
+  color: black; 
+  padding: 0.8rem; 
+  text-align: center; 
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
 
 :root {
     --color-bg: #1d1d38;

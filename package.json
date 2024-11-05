@@ -1,4 +1,4 @@
-{
+  {
   "name": "kiancurranmahon.github.io",
   "homepage": "https://kiancurranmahon.github.io/",
   "version": "0.7.0",
@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
